@@ -13,7 +13,7 @@ def dE(s1, s2, tm, m):
 
 
 speedKmH = [0, 1, 5, 7, 9, 12, 14, 19, 25, 30, 35, 46, 46]
-amp = [160, 140, 120, 110, 100, 80, 75, 70, 55, 45, 42, 38.5, 0]
+amp = [166, 140, 120, 110, 100, 80, 75, 70, 55, 45, 42, 38.5, 0]
 # speedKmH = [1, 5, 7, 9, 12, 14, 19, 25, 30, 35, 46]
 # amp = [140, 120, 110, 100, 80, 75, 70, 55, 45, 42, 38.5]
 rat = []
@@ -22,7 +22,7 @@ tur2 = []
 for i, n in enumerate(speedKmH):
     tur1.append(round(n / 3.6 / (0.78 * 3.14) * 5.33, 1))
     tur2.append(tur1[i] / (10 * 2.5))
-    rat.append(round(amp[i]/160, 3))
+    rat.append(round(amp[i]/166, 3))
 
     print(f"{speedKmH[i]:<2} {tur1[i]:<4} {amp[i]:<4}      {tur1[i]:<2} {rat[i]:<2} ")
 

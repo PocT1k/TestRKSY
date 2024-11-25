@@ -2,7 +2,7 @@ import time
 from canvas import metro, tk, fprint
 van = metro.van
 grk = van.grk
-# grk.addPos(1)
+grk.addPos(4)
 
 
 fps = 30
@@ -25,6 +25,6 @@ while True:
 
     cTime += ts
     tk.update()
-    time.sleep(ts/2)
-    if res >= 14:
+    # time.sleep(ts/2)
+    if res >= 20:
         break

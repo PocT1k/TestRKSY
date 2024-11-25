@@ -99,8 +99,8 @@ class Van:
         # ratio = 0.2 / (turnovers / 10 + 0.2)  # 2 случайная, улучшенная
         # ratio = 10 / (turnovers + 10)  # 3 типо подобрано
         # ratio = 0.1 / (turnovers/15 + 0.1)  # 4
-        # ratio = 1 / (turnovers + 1)  # 5 От графика ампеража
-        ratio = 20 / (turnovers ** 2 + 20)  # 6 ...
+        ratio = 10 / (turnovers + 10)  # 5 От графика ампеража
+        # ratio = 20 / (turnovers ** 2 + 20)  # 6 ...
         if ratio < 0:
             ratio = 0.0
         else:
