@@ -26,5 +26,5 @@ while True:
     cTime += ts
     tk.update()
     # time.sleep(ts/2)
-    if res >= 20:
-        break
+    # if res >= 20:
+    #     break

@@ -18,6 +18,12 @@ numPlots = len(toSoloBuild)
 nRows = math.ceil(math.sqrt(numPlots)) # Количество строк
 nCols = math.ceil(numPlots / nRows) # Количество столбцов
 
+
+#Удаляем ласт строку, если она не дописана
+counterDataRow = len(lines[2].split(';'))
+if len(lines[-1].split(';')) != counterDataRow:
+    lines.pop()
+
 dataColT = [float(line.strip().split(';')[0]) for line in lines[2:]]
 for i, build in enumerate(toSoloBuild):
     # Извлечение значений, пропуская первую строку (заголовок)
@@ -48,7 +54,4 @@ plt.tight_layout()  # Автоматически подгоняет подгра
 
 # Отображение графика
 plt.tight_layout()
-plt.show()
-
-
 plt.show()
